@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngro for Companies - Hire Smart Teen Talent | Cost-Effective & Innovative Solutions</title>
+    <meta name="description" content="Hire talented teenagers for your business needs. 4000+ companies trust Funngro for cost-effective, innovative solutions in design, content, social media, development & more.">
+    <meta name="keywords" content="hire teen talent, freelance teenagers, cost-effective solutions, innovative talent, Funngro business, teenage freelancers India">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Funngro for Companies - Smart Talent for Smart Companies">
+    <meta property="og:description" content="Access 50+ lakh talented teens for your projects. Save up to 50% on costs while getting innovative, timely delivery.">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00D9A3;
+            --secondary: #0D1B2A;
+            --accent: #FF6B6B;
+            --accent-yellow: #FFB800;
+            --text-dark: #1B263B;
+            --text-light: #E0E1DD;
+            --bg-light: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #00D9A3 0%, #00B887 100%);
+            --gradient-2: linear-gradient(135deg, #FF6B6B 0%, #FF8787 100%);
+            --gradient-3: linear-gradient(135deg, #FFB800 0%, #FFC933 100%);
+            --gradient-dark: linear-gradient(135deg, #0D1B2A 0%, #1B263B 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--bg-light);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: var(--gradient-1);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 217, 163, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 217, 163, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: var(--gradient-dark);
+            color: white;
+            padding: 6rem 2rem;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(0,217,163,0.1)"/></svg>');
+            background-size: 100px;
+            opacity: 0.3;
+        }
+        
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+        
+        .hero .highlight {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.9;
+            max-width: 700px;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 6px 25px rgba(0, 217, 163, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(0, 217, 163, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 2px solid var(--primary);
+            transition: all 0.3s;
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            transform: translateY(-3px);
+        }
+        
+        /* Stats Section */
+        .stats {
+            background: white;
+            padding: 4rem 2rem;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .stats-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+        
+        /* Services Section */
+        .services {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 4rem;
+        }
+        
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 25px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+            transition: all 0.4s;
+            border: 2px solid transparent;
+        }
+        
+        .service-card:hover {
+            border-color: var(--primary);
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+        
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .service-card p {
+            color: #666;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-price {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .service-link {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            transition: gap 0.3s;
+        }
+        
+        .service-link:hover {
+            gap: 1rem;
+        }
+        
+        /* Benefits Section */
+        .benefits {
+            background: linear-gradient(135deg, #00D9A3 0%, #00B887 100%);
+            color: white;
+            padding: 6rem 2rem;
+            margin-top: 6rem;
+        }
+        
+        .benefits-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .benefits h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 3rem;
+        }
+        
+        .benefit-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 3rem;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s;
+        }
+        
+        .benefit-item:hover {
+            background: rgba(255, 255, 255, 0.15);
+            transform: scale(1.03);
+        }
+        
+        .benefit-item h3 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .benefit-item p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            opacity: 0.95;
+        }
+        
+        /* Testimonials */
+        .testimonials {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .testimonial-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .testimonial-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+            position: relative;
+        }
+        
+        .quote-icon {
+            font-size: 3rem;
+            color: var(--primary);
+            opacity: 0.3;
+            position: absolute;
+            top: 1rem;
+            right: 1.5rem;
+        }
+        
+        .testimonial-text {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-style: italic;
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .author-avatar {
+            width: 60px;
+            height: 60px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: white;
+        }
+        
+        .author-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .author-info p {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Process Section */
+        .process {
+            background: var(--secondary);
+            color: white;
+            padding: 6rem 2rem;
+        }
+        
+        .process-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .process h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 4rem;
+        }
+        
+        .process-steps {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 2rem;
+            position: relative;
+        }
+        
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+        
+        .step-number {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            font-weight: 900;
+            margin: 0 auto 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 217, 163, 0.3);
+        }
+        
+        .process-step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .process-step p {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            line-height: 1.6;
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: var(--gradient-1);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        
+        .cta-section h2 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            opacity: 0.95;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+        }
+        
+        .btn-white {
+            background: white;
+            color: var(--text-dark);
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+        }
+        
+        .btn-white:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: var(--text-light);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .stats-container, .service-grid, .benefits-grid, 
+            .testimonial-grid, .process-steps {
+                grid-template-columns: 1fr;
+            }
+            
+            .hero-buttons, .cta-buttons {
+                flex-direction: column;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FUNNGRO</div>
+            <ul class="nav-links">
+                <li><a href="index.html">For Teens</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#process">How It Works</a></li>
+                <li><a href="#testimonials">Success Stories</a></li>
+                <li><a href="#" class="cta-button">Hire Talent →</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-container">
+                <h1>
+                    <span class="highlight">Smart Talent</span><br>
+                    for Smart Companies
+                </h1>
+                <p>
+                    Access 50+ lakh talented teenagers for your business needs. Get cost-effective, 
+                    innovative solutions with timely delivery while empowering the next generation.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Post Your First Project</a>
+                    <a href="#services" class="btn-secondary">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stats-container">
+                <div class="stat-item">
+                    <span class="stat-number">4,000+</span>
+                    <span class="stat-label">Companies Trust Us</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50L+</span>
+                    <span class="stat-label">Talented Teens</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">1,000+</span>
+                    <span class="stat-label">Active Projects</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Service Categories</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="services" id="services">
+            <h2 class="section-title">Popular Services</h2>
+            <p class="section-subtitle">From branding to development, find talented teens for all your business needs</p>
+            
+            <div class="service-grid">
+                <div class="service-card">
+                    <span class="service-icon">🎨</span>
+                    <h3>Brand Design</h3>
+                    <p>Get professional logos, brochures, and brand materials designed by creative teens.</p>
+                    <div class="service-price">₹2,000 <span style="font-size: 0.9rem; opacity: 0.7;">starting</span></div>
+                    <a href="#" class="service-link">View Samples →</a>
+                </div>
+                
+                <div class="service-card">
+                    <span class="service-icon">💻</span>
+                    <h3>Website Development</h3>
+                    <p>Custom website design and development to boost your business growth online.</p>
+                    <div class="service-price">₹5,000 - ₹15,000</div>
+                    <a href="#" class="service-link">View Samples →</a>
+                </div>
+                
+                <div class="service-card">
+                    <span class="service-icon">📱</span>
+                    <h3>Social Media Management</h3>
+                    <p>Let talented teens manage and grow your social media presence effectively.</p>
+                    <div class="service-price">₹5,000/month</div>
+                    <a href="#" class="service-link">View Samples →</a>
+                </div>
+                
+                <div class="service-card">
+                    <span class="service-icon">📝</span>
+                    <h3>Content Writing</h3>
+                    <p>Blogs, articles, website content, and more from skilled young writers.</p>
+                    <div class="service-price">₹500 - ₹800</div>
+                    <a href="#" class="service-link">View Samples →</a>
+                </div>
+                
+                <div class="service-card">
+                    <span class="service-icon">🎥</span>
+                    <h3>Video Production</h3>
+                    <p>Engaging explainer videos, reels, and promotional content for your brand.</p>
+                    <div class="service-price">₹2,500</div>
+                    <a href="#" class="service-link">View Samples →</a>
+                </div>
+                
+                <div class="service-card">
+                    <span class="service-icon">🔍</span>
+                    <h3>Research & Data</h3>
+                    <p>Market research, surveys, data entry, and analysis by detail-oriented teens.</p>
+                    <div class="service-price">₹1,500</div>
+                    <a href="#" class="service-link">View Samples →</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="benefits">
+            <div class="benefits-container">
+                <h2>Why Work with Teen Talent?</h2>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <h3>💡 Innovation</h3>
+                        <p>Get fresh perspectives and innovative ideas from digital natives who understand modern trends 
+                        and youth culture. Teens bring creativity unburdened by traditional thinking.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>💰 Cost-Effective</h3>
+                        <p>Save up to 50% on project costs while getting high-quality work. Invest in the next 
+                        generation while maintaining your budget efficiency.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>⚡ Fast Delivery</h3>
+                        <p>Teens are energetic, responsive, and deadline-driven. Most projects are completed 
+                        within 3-7 days with exceptional attention to detail.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <h3>🎯 Quality Work</h3>
+                        <p>Our teens are skilled, vetted, and eager to build their portfolios. They deliver 
+                        professional-grade work with passion and dedication.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2 class="section-title">What Companies Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        The quality of work from teens is excellent. We've used their graphic design and research 
+                        talent - it's cost-effective with great results!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">D</div>
+                        <div class="author-info">
+                            <h4>Darsh Golecha</h4>
+                            <p>CEO, Monech</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        Impressed by the article written by a Grade IX student on digital payments. 
+                        The maturity and insight were remarkable.
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <h4>Ravishankar Gopalan</h4>
+                            <p>Execute Partners & Consultants</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="quote-icon">"</div>
+                    <p class="testimonial-text">
+                        Funngro services are excellent. The blogs for our website exceeded expectations. 
+                        Amazed by the financial knowledge of these young talents!
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">M</div>
+                        <div class="author-info">
+                            <h4>Meetu</h4>
+                            <p>Founder, Let's Evolve</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="process">
+            <div class="process-container">
+                <h2>Simple 5-Step Process</h2>
+                <div class="process-steps">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h4>Register</h4>
+                        <p>Sign up on Funngro in under 2 minutes</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h4>Post Project</h4>
+                        <p>Add your project details and requirements</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h4>Get Applications</h4>
+                        <p>Receive curated list of interested teens</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h4>Select Talent</h4>
+                        <p>Review profiles and choose the best fit</p>
+                    </div>
+                    <div class="process-step">
+                        <div class="step-number">5</div>
+                        <h4>Project Done</h4>
+                        <p>Receive work and release payment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <h2>Ready to Hire Smart Teen Talent?</h2>
+            <p>Join 4,000+ companies working with talented teenagers on Funngro</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn-white">Post Your First Project</a>
+                <a href="#" class="btn-secondary">Contact Us</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="#">About</a>
+                <a href="index.html">For Teens</a>
+                <a href="#">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p>© 2025 FUNNGRO - Wishbanc Technologies Private Limited. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">Empowering teens and companies to realize their full potential</p>
+        </div>
+    </footer>
+</body>
+</html>

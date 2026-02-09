@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funngro Teenlancer - Earn Real Money Working with Real Companies | India's #1 Teen Platform</title>
+    <meta name="description" content="Join 50+ lakh teens earning real money on Funngro! Work with top companies, gain experience, and become financially independent. As seen on Shark Tank India.">
+    <meta name="keywords" content="teen freelancing, earn money online, teenage jobs, Funngro, Shark Tank India, teen financial independence, online work for teens">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Funngro Teenlancer - Earn Real Money Working with Real Companies">
+    <meta property="og:description" content="India's trusted platform for teens to earn, learn, and grow. Join 50+ lakh teenlancers today!">
+    <meta property="og:type" content="website">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #00D9A3;
+            --secondary: #0D1B2A;
+            --accent: #FF6B6B;
+            --accent-yellow: #FFB800;
+            --text-dark: #1B263B;
+            --text-light: #E0E1DD;
+            --bg-light: #F8F9FA;
+            --gradient-1: linear-gradient(135deg, #00D9A3 0%, #00B887 100%);
+            --gradient-2: linear-gradient(135deg, #FF6B6B 0%, #FF8787 100%);
+            --gradient-3: linear-gradient(135deg, #FFB800 0%, #FFC933 100%);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            overflow-x: hidden;
+            background: var(--bg-light);
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Outfit', sans-serif;
+            font-weight: 800;
+        }
+        
+        /* Animated Background */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+        
+        .floating-shape {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            background: var(--gradient-1);
+            border-radius: 50% 40% 60% 50%;
+            top: 10%;
+            left: -10%;
+            animation-delay: 0s;
+        }
+        
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            background: var(--gradient-2);
+            border-radius: 40% 60% 50% 40%;
+            top: 60%;
+            right: 5%;
+            animation-delay: 7s;
+        }
+        
+        .shape-3 {
+            width: 250px;
+            height: 250px;
+            background: var(--gradient-3);
+            border-radius: 60% 40% 40% 60%;
+            bottom: 10%;
+            left: 50%;
+            animation-delay: 14s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) rotate(0deg); }
+            33% { transform: translate(30px, -30px) rotate(120deg); }
+            66% { transform: translate(-20px, 20px) rotate(240deg); }
+        }
+        
+        /* Header */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1.2rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.05);
+        }
+        
+        nav {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            letter-spacing: -1px;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            align-items: center;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background: var(--gradient-1);
+            bottom: -5px;
+            left: 0;
+            transition: width 0.3s;
+        }
+        
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background: var(--gradient-1);
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(0, 217, 163, 0.3);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(0, 217, 163, 0.4);
+        }
+        
+        /* Hero Section */
+        .hero {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .hero-content h1 {
+            font-size: 4rem;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            animation: slideInLeft 0.8s ease-out;
+        }
+        
+        .hero-content .highlight {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .hero-content p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+            animation: slideInLeft 0.8s ease-out 0.2s both;
+        }
+        
+        .shark-tank-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
+            color: #1B263B;
+            padding: 0.6rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            animation: slideInLeft 0.8s ease-out 0.1s both;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            animation: slideInLeft 0.8s ease-out 0.3s both;
+        }
+        
+        .btn-primary {
+            background: var(--gradient-1);
+            color: white;
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 6px 25px rgba(0, 217, 163, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 35px rgba(0, 217, 163, 0.4);
+        }
+        
+        .btn-secondary {
+            background: white;
+            color: var(--text-dark);
+            padding: 1.2rem 3rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        .hero-visual {
+            position: relative;
+            animation: fadeIn 1s ease-out 0.4s both;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+        
+        .stat-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #666;
+            font-size: 1rem;
+            font-weight: 600;
+        }
+        
+        /* Features Section */
+        .features {
+            max-width: 1400px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .feature-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+            transition: all 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transition: transform 0.4s;
+        }
+        
+        .feature-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+        }
+        
+        .feature-icon {
+            width: 80px;
+            height: 80px;
+            background: var(--gradient-1);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .feature-card:nth-child(2) .feature-icon {
+            background: var(--gradient-2);
+        }
+        
+        .feature-card:nth-child(3) .feature-icon {
+            background: var(--gradient-3);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.7;
+        }
+        
+        /* Categories Section */
+        .categories {
+            background: var(--secondary);
+            color: white;
+            padding: 6rem 2rem;
+            margin-top: 6rem;
+        }
+        
+        .categories-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .categories h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 3rem;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .category-tag {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1.5rem;
+            border-radius: 15px;
+            text-align: center;
+            font-weight: 600;
+            transition: all 0.3s;
+            backdrop-filter: blur(10px);
+        }
+        
+        .category-tag:hover {
+            background: rgba(0, 217, 163, 0.2);
+            transform: scale(1.05);
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: var(--text-light);
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+        
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* Animations */
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 968px) {
+            .hero {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-buttons {
+                justify-content: center;
+            }
+            
+            .feature-cards, .category-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation">
+        <div class="floating-shape shape-1"></div>
+        <div class="floating-shape shape-2"></div>
+        <div class="floating-shape shape-3"></div>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">FUNNGRO</div>
+            <ul class="nav-links">
+                <li><a href="#teens">For Teens</a></li>
+                <li><a href="company.html">For Companies</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#" class="cta-button">Start Earning →</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <div class="shark-tank-badge">
+                    ⭐ As Seen on Shark Tank India
+                </div>
+                <h1>
+                    Earn <span class="highlight">Real Money</span><br>
+                    Working with<br>
+                    Real Companies
+                </h1>
+                <p>
+                    Join 50+ lakh teens across India who are already earning, learning, and growing with Funngro. 
+                    Your journey to financial independence starts here.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#" class="btn-primary">Start Earning Now</a>
+                    <a href="company.html" class="btn-secondary">For Companies</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">50L+</span>
+                        <span class="stat-label">Active Teenlancers</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">4000+</span>
+                        <span class="stat-label">Companies Hiring</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Live Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">12</span>
+                        <span class="stat-label">Work Categories</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="teens">
+            <h2 class="section-title">Why Teenlancers Choose Funngro</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <div class="feature-icon">💰</div>
+                    <h3>Real Earnings</h3>
+                    <p>Get paid for your skills! Earn anywhere from ₹500 to ₹15,000 per project. Build your financial independence while you're still in school.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Skill Development</h3>
+                    <p>Work on real projects with top companies. Gain practical experience in design, content writing, social media, coding, and more.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>Career Boost</h3>
+                    <p>Build a portfolio that stands out. Get recommendations, testimonials, and work experience that colleges and future employers love.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="categories-container">
+                <h2>Popular Work Categories</h2>
+                <div class="category-grid">
+                    <div class="category-tag">📝 Content Writing</div>
+                    <div class="category-tag">🎨 Graphic Design</div>
+                    <div class="category-tag">📱 Social Media</div>
+                    <div class="category-tag">🎥 Video Creation</div>
+                    <div class="category-tag">💻 Web Development</div>
+                    <div class="category-tag">📊 Data Entry</div>
+                    <div class="category-tag">🔍 Research</div>
+                    <div class="category-tag">🎙️ Voice Over</div>
+                    <div class="category-tag">📈 Sales & Marketing</div>
+                    <div class="category-tag">📸 Photography</div>
+                    <div class="category-tag">🎬 Video Editing</div>
+                    <div class="category-tag">🌐 Translation</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="company.html">For Companies</a>
+                <a href="#faq">FAQ</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+            <p>© 2025 FUNNGRO - Wishbanc Technologies Private Limited. All rights reserved.</p>
+            <p style="margin-top: 1rem; opacity: 0.8;">Empowering the next generation to Learn, Earn, and Grow</p>
+        </div>
+    </footer>
+</body>
+</html>
